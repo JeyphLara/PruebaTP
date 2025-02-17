@@ -1,0 +1,28 @@
+/* Estilos para el navbar */
+.navbar {
+  background-color: #3498db;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-link {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+  background-color: #2980b9;
+  border-radius: 5px;
+}

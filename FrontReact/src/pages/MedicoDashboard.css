@@ -1,0 +1,127 @@
+/* Estilo base para todo el dashboard */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Encabezado */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Mensaje de error */
+.error {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Estilos para la lista de pacientes */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f7f6;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+span {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilo para los inputs de fecha y select */
+input, select {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: auto;
+}
+
+select {
+    margin-right: 20px;
+}
+
+/* Estilo para la fecha */
+.react-datepicker-wrapper {
+    display: inline-block;
+}
+
+.react-datepicker__input-container input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: auto;
+}
+
+/* Estilo para cada fila de pacientes */
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+li span {
+    margin-bottom: 10px;
+}
+
+/* Contenedor de la fecha y botones */
+li .date-picker-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+li .date-picker-container button,
+li .date-picker-container select {
+    margin-right: 10px;
+}
+
+/* Estilos de las opciones de médico */
+select option {
+    font-size: 1rem;
+}

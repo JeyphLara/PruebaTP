@@ -1,0 +1,141 @@
+/* Estilos generales para el dashboard */
+.admin-dashboard {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+/* Estilos para el navbar */
+.navbar {
+  background-color: #3498db;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-link {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+  background-color: #2980b9;
+  border-radius: 5px;
+}
+
+
+/* Estilos para el contenido principal del Dashboard */
+.dashboard-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+.dashboard-content {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+select {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+
+/* Estilos para las listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .form {
+      max-width: 100%;
+  }
+}
